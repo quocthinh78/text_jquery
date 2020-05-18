@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+</style>
+<script>
+$(function(){
+    $('#start').click(function(){
+        $('div').animate({height:130},1000);
+        $('div').animate({height:300},1000);
+        $('div').animate({height:50},1000);
+        $('div').animate({width:500},1000);
+    });
+    $('#stop').click(function(){
+        $('div').clearQueue();
+    });
+});
+</script>
+</head>
+
+<body>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<div></div>
+</body>
+</html>
+ <!-- loại bỏ các hang đơi phía sau -->

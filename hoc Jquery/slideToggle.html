@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div {
+    background-color: blue;
+    display: none;
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 150px;
+}
+p {
+    clear: both;
+}
+.visible {
+    background-color: red;
+    display: block!important;
+}
+</style>
+<script>
+$(function(){
+    $('button').click(function(){
+        $('.swing').slideToggle(2000,'swing');
+        
+        $('.linear').slideToggle(2000,'linear');
+    });
+});
+</script>
+</head>
+
+<body>
+<p><button>Click</button></p>
+<div class="swing">slideToggle swing</div>
+<div class="linear">slideToggle linear</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style>
+p { background-color: blue; }
+</style>
+<script>
+$(function(){
+    $('button').on('click', function() {
+        $('p').offset(function(index, coordinates){
+            if (index == 0) {//Chỉ tác động lên thành phần đầu tiên
+    	        coordinates.top += 10;
+    	        coordinates.left += 10;
+            }
+            return $(this).offset(coordinates);
+        });
+    });
+});
+</script>
+</head>
+
+<body>
+<p>Tag p 01</p>
+<p>Tag p 02</p>
+<button>Click</button>
+</body>
+</html>

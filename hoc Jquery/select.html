@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+input { width:200px;}
+span {
+    color:red;
+    display:none;
+}
+</style>
+<script>
+$(function(){
+	$('input').select(function(){
+		$('span').css('display', ' inline').fadeOut("slow");
+	})
+})
+</script>
+</head>
+
+<body>
+<input type="text" value="Chọn text này để thấy hiệu ứng" /><span>selecting</span></div>
+</body>
+</html>
+
+
+chon thanh phan hien ket qua

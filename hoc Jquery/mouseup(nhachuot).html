@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+	$('p').mouseup(function(){
+		$(this).append('<span style="color: red;" >mouseup</span>');
+	})
+	$('p').mousedown(function(){
+		$(this).append('<span style="color: blue;" >mousedown</span>');
+	})
+})
+</script>
+</head>
+
+<body>
+<p>Click vào đây và nhả chuột ra để xem kết quả.</p>
+</body>
+</html>

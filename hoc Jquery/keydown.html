@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		$('input').keydown(function(){
+			$(this).css('background','yellow');
+		});
+		$('button').click(function(){
+			$('input').keydown();
+		})
+	})
+</script>
+</head>
+
+<body>
+<input type="text" value="text text" />
+<button>Click</button>
+</body>
+</html>
+
+ Ràng buộc một xử lý tới một sự kiện keydown (nhấn phím), hoặc kích hoạt sự kiện keydown lên một thành phần.

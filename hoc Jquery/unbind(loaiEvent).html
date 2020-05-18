@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+	function eclick(){
+		$('span').show().fadeOut('slow');
+	}
+	$('.bind').click(function(){
+		$('.clickEvent').click(eclick).text('su kien da duoc them vao');
+	});
+	$('.unbind').click(function(){
+		$('.clickEvent').unbind('click',eclick).text('su kien da duoc bo');
+	});
+});
+</script>
+</head>
+
+<body>
+<button class="clickEvent">None</button>
+<button class="bind">.bind()</button>
+<button class="unbind">.unbind()</button>
+<span style="display: none;">Sự kiện Click vừa được tạo!</span>
+</body>
+</html>
+
+
+ Loại bỏ sự kiện được đính kèm trước đó từ thành phần.

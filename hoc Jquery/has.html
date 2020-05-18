@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('li').has('ul').css('border','1px solid blue');
+});
+</script>
+</head>
+
+<body>
+<ul>
+<li>Thành phần thứ 1</li>
+<li>Thành phần thứ 2
+    <ul>
+        <li>Thành phần con thứ 1</li>
+        <li>Thành phần con thứ 2</li>
+    </ul>
+</li>
+<li>Thành phần thứ 3</li>
+<li>Thành phần thứ 4</li>
+<li>Thành phần thứ 5</li>
+</ul>
+</body>
+</html>
+Xây dựng một đối tượng jQuery mới từ một tập hợp con của các thành phần phù hợp.

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+		$('li').click(function(){
+			if($(this).is('li')){
+				$(this).css('color' , 'blue');
+			}
+		})
+	})
+</script>
+</head>
+
+<body>
+<ul>
+<li>List item 01</li>
+<li>List item 02</li>
+<li>List item 03</li>
+<li>List item 04</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('img').load(function(){
+        if($(this).height() > 100) {
+            $(this).css('border','5px solid blue');
+        }
+    })
+});
+</script>
+</head>
+
+<body>
+<p><img src="1.jpg" alt="" /></p>
+<p><img src="http://www.hocwebchuan.com/common/images/img_logo.gif" alt="" /></p>
+</body>
+</html>

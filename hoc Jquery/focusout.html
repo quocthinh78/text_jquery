@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+span { display: none; }
+</style>
+<script>
+$(function(){
+    $('p').focusout(function(){
+        $(this).find('span').css('display','inline').fadeOut(1200);
+    });
+});
+</script>
+</head>
+
+<body>
+<p><input type="text" value="" /> <span>Focus out</span></p>
+<p><input type="text" value="" /> <span>Focus out</span></p>
+</body>
+</html>
+
+xác nhận thoát khỏi focus

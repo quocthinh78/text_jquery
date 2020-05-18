@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $("p").on("click",function(){
+        $(this).css("background-color","yellow");
+    });
+    $("button").click(function(){
+        $("p").off('click');
+    });
+});
+</script>
+</head>
+
+<body>
+<p>Thành phần p</p>
+<p>Thành phần p</p>
+<p>Thành phần p</p>
+<button>Click</button>
+</body>
+</html>

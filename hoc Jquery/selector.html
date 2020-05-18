@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    var d = $("div ul.test li:first-child");
+    $("span").text(d.selector);
+});
+</script>
+</head>
+
+<body>
+<div>
+    <ul class="test">
+        <li>li 01</li>
+        <li>li 02</li>
+        <li>li 03</li>
+        <li>li 04</li>
+    </ul>
+</div>
+<span></span>
+</body>
+</html>
+
+lay bo chon cua thanh phan

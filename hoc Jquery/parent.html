@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('li').parent('.list04').css('border','1px solid red');
+});
+</script>
+</head>
+
+<body>
+<ul>
+    <li>li thứ nhất</li>
+    <li>li thứ hai
+        <ul>
+            <li>li thứ hai 01</li>
+            <li>li thứ hai 02</li>
+            <li>li thứ hai 03</li>
+        </ul>
+    </li>
+    <li>li thứ ba</li>
+    <li>li thứ tư
+        <ul class="list04">
+            <li>li thứ tư 01</li>
+            <li>li thứ tư 02</li>
+            <li>li thứ tư 03</li>
+        </ul>
+    </li>
+    <li>li thứ năm</li>
+</ul>
+</body>
+</html>

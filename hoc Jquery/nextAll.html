@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+p,div {
+    border: 1px solid blue;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+}
+</style>
+<script>
+$(function(){
+    $(':nth-child(1)').nextAll('p').css('border','1px solid red');
+});
+</script>
+</head>
+
+<body>
+<p>Tag p</p>
+<div>Tag div</div>
+<p>Tag p</p>
+<p>Tag p</p>
+<div>Tag div</div>
+<p>Tag p</p>
+<div>Tag div</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+</style>
+<script>
+$(function(){
+    $('.start').click(function(){
+        $('div').animate({top:100},"slow");
+        $('div').animate({left:400},"slow");
+        $('div').animate({top:0},"slow");
+        $('div').animate({left:0},"slow");
+    });
+	
+    $('.stop').click(function(){
+        $('div').stop(true);
+    });
+});
+</script>
+</head>
+
+<body>
+<p><button class="start">Start</button><button class="stop">stop</button></p>
+<div>div</div>
+</body>
+</html>

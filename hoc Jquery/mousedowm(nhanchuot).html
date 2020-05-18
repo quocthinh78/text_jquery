@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+	$('img').mousedown(function(){
+		$(this).css('border' , '5px solid red');
+	});
+	$('button').click(function(){
+		$('img').mousedown();
+	})
+})
+</script>
+</head>
+
+<body>
+<img src="http://hocwebchuan.com/common/images/img_webstandard.gif" alt="HỌC WEB CHUẨN" />
+<button>Click</button>
+</body>
+</html>

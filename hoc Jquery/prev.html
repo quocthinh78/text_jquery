@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('li.second').prev().css('border','1px solid blue');
+});
+</script>
+</head>
+
+<body>
+<ul>
+<li>
+<ul>
+        <li>li con thứ nhất</li>
+        <li>li con thứ hai</li>
+    </ul>
+</li>
+<li class="second">li thứ hai</li>
+<li>li thứ ba</li>
+<li>li thứ tư</li>
+<li>li thứ năm</li>
+</ul>
+</body>
+</html>
+
+prev(): xác định thành phần cùng cấp ngay trước thành phần sử dụng .prev().

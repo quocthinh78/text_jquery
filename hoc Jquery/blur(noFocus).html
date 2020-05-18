@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+	$('.clickFocus').click(function(){
+		$('#txtField').focus().css('background' , '#eee');
+	}),
+	$('.clickBlur'),click(function(){
+		$('#txtField').blur().css('background' ,'none');
+	})
+})
+</script>
+</head>
+
+<body>
+<button class="clickFocus">Focus</button><button class="clickBlur">blur</button><br />
+<input type="text" id="txtField" value="Field" />
+</body>
+</html>
+
+<!-- Kèm một hành động khi sử dụng blur, sự kiện blur là khi người dùng thoát khỏi focus trong trường nhập (input).
+ .blur(function(){}); -->

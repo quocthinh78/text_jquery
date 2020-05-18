@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('li.fourth').prevAll().css('background-color','yellow');
+});
+</script>
+</head>
+
+<body>
+<ul>
+<li>li thứ nhất</li>
+<li>li thứ hai</li>
+<li>li thứ ba</li>
+<li class="fourth">li thứ tư</li>
+<li>li thứ năm</li>
+</ul>
+</body>
+</html>
+.prevAll(): xác định tất cả các thành phần cùng cấp ngay trước thành phần sử dụng .prevAll().

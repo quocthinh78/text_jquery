@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+input { color: #ccc; }
+</style>
+<script>
+$(function(){
+    $('p').focusin(function(){
+        $(this).find('input').css('color','red');
+    });
+});
+</script>
+</head>
+
+<body>
+<p><input type="text" value="Nhập text" />
+<p><input type="text" value="Nhập text" />
+</body>
+</html>
+
+xac nhan vao 1 focus

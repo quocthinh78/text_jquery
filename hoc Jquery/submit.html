@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+input { width:200px;}
+</style>
+<script>
+$(function(){
+    $('form').submit(function(){
+         if ($("input:text").val() == "123456") {
+         $("span").text("Đã xác nhận").show();
+         return true;
+    }
+         $("span").text("Không có giá trị").show();
+         return false;
+    });
+	
+    $('button').click(function(){
+        $('form').submit()
+    })
+});
+</script>
+</head>
+
+<body>
+<span>Gõ "123456" vào bên dưới và nhấn button</span>
+<form action="javascript:alert('success!');">
+<input type="text" />
+</form>
+<button>Submit</button>
+</body>
+</html>
+
+ su kien submit 

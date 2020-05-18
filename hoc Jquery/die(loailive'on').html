@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+$(function(){
+    var alertFunc = function(){
+        alert("You are now leaving this site");
+        return false;
+    };
+    $('a').live('click',alertFunc);
+    
+    $('a').live('hover',alertFunc);
+  
+    $('a').die('hover');
+});
+</script>
+</head>
+
+<body>
+<a href="http://hocwebchuan.com">http://hocwebchuan.com</a><br>
+</body>
+</html>
+
+<!-- loai bo lenh live() 
+live() phien ban 1.9 bi loai bo thya bang on -->

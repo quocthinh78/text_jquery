@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function(){
+    var x=0;
+    $("p").click(function(event){
+        $(this).animate({fontSize:"+=3px"});
+        x++;
+        if (x>=3){
+            $(this).off(event);
+        }
+    }); 
+});
+</script>
+</head>
+
+<body>
+<p>Click để zoom text, có thể click để zoom được 3 lần</p>
+</body>
+</html>

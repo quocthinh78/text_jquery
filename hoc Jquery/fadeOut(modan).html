@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div {
+    background-color: blue;
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+p {
+    clear: both;
+}
+.visible {
+    background-color: red;
+    display: block!important;
+}
+</style>
+<script>
+$(function(){
+    $('button').click(function(){
+        $('.swing').fadeOut(2000,function(){
+            $(this).addClass('visible').text('noi dung moi');
+        })
+    });
+    $('button').click(function(){
+        $('.linear').fadeOut(2000,function(){
+            $(this).addClass('visible').text('noi dung moi');
+        })
+    });
+})
+</script>
+</head>
+
+<body>
+<p><button>Click</button></p>
+<div class="swing">fadeOut swing</div>
+<div class="linear">fadeOut linear</div>
+</body>
+</html>

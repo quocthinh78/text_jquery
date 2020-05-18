@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div { padding: 20px;}
+</style>
+<script>
+$(function(){
+	var pos = $('p').position();
+	$('span').text('left: ' + pos.left + 'top: ' + pos.top);
+})
+</script>
+</head>
+
+<body>
+<div>
+<p>Thành phần p</><br />
+Tọa độ của thành phần p:<span></span>
+</div>
+</body>
+</html>
+
+.position(): Lấy tọa độ hiện tại của thành phần, tọa độ này được tính dựa vào gốc của thành phần cha.

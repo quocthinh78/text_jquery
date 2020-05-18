@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+	$('p').each(function(){
+		var hasLasst = $(this).hasClass('test');
+		if(hasLasst){
+			$(this).append('<span> ok </span>')
+		}
+	})
+})
+</script>
+</head>
+
+<body>
+<p class="test">Thành phần p</p>
+<p>Thành phần p</p>
+</body>
+</html>
+
+kiem tra thanh phan co chua class hay k

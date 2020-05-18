@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('li.item01_02').closest('.parent01').css('border','1px solid red');
+});
+</script>
+</head>
+
+<body>
+<ul class="parent01">
+<li class="item01">li thứ nhất</li>
+<li class="item02">
+    <p>li thứ hai</p>
+    <ul class="parent02">
+        <li class="item01_01">li con thứ nhất</li>
+        <li class="item01_02">li con thứ hai</li>
+        <li class="item01_03">li con thứ ba
+            <ul class="parent03">
+                <li class="item01_03_01">li con thứ nhất</li>
+                <li class="item01_03_02">li con thứ hai</li>
+                <li class="item01_03_03">li con thứ ba</li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li class="item03">li thứ ba</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    var a = {what: "Một đối tượng JS"},
+        b = $('body');
+    if ( a.jquery ) {
+        $('p').text('a là jQuery object!');
+    }
+    if ( b.jquery ) {
+        $('p').text('b là jQuery object!');
+    }
+    var test = $.fn.jquery;
+    $('span').text(test)
+});
+</script>
+</head>
+
+<body>
+<p></p>
+<span>phien ban la : </span><br>
+</body>
+</html>
+
+xác định phiên bản jquery và kiểm tra xem có phải jquery hay k

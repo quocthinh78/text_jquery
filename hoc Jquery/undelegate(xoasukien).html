@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    function eClick() {
+        $('span').show().fadeOut('slow');
+    }
+    $('.delegate').click(function(){
+        $('body').delegate('.clickEvent' , 'click' , eClick)
+        .find('.clickEvent').text('su kien da duoc them vao');
+    })
+    $('.undelegate').click(function(){
+        $('body').undelegate('.clickEvent' , ' click' , eClick)
+        .find('.clickEvent').text('su kien bi loai bo');
+
+    })
+});
+</script>
+</head>
+
+<body>
+<button class="clickEvent">None</button>
+<button class="delegate">.delegate()</button>
+<button class="undelegate">.undelegate()</button>
+<span style="display: none;">Sự kiện Click vừa được tạo!</span>
+</body>
+</html>

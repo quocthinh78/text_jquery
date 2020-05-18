@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(function(){
+    $('.test').offsetParent().css('border','1px solid blue');
+});
+</script>
+</head>
+
+<body>
+<ul style="position: relative;">
+    <li>Thành phần thứ 1</li>
+    <li>
+        <ul style="position: relative;">
+            <li>Thành phần 2-1</li>
+            <li>Thành phần 2-2</li>
+            <li>Thành phần 2-3</li>
+            <li style="position: relative;">
+                <ul>
+                    <li class="test">Thành phần 2-4-1</li>
+                    <li>Thành phần 2-4-2</li>
+                    <li>Thành phần 2-4-3</li>
+                    <li>Thành phần 2-4-4</li>
+                    <li>Thành phần 2-4-5</li>
+                </ul>
+            </li>
+            <li>Thành phần 2-5</li>
+        </ul>
+    </li>
+    <li>Thành phần thứ 3</li>
+    <li>Thành phần thứ 4</li>
+    <li>Thành phần thứ 5</li>
+</ul>
+</body>
+</html>

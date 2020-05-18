@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div { margin: 2px; padding: 2px; }
+div.test { border: 1px solid red; }
+div.test div { border: 1px solid blue; }
+</style>
+<script>
+$(function(){
+    $('p').wrapAll($('.test'));
+});
+</script>
+</head>
+
+<body>
+<p>Thành phần p</p>
+<p>Thành phần p</p>
+<p>Thành phần p</p>
+<div class="test"><div></div></div>
+</body>
+</html>

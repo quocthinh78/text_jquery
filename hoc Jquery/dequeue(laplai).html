@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+div {
+    background-color: yellow;
+    height: 50px;
+    left: 10px;
+    position: absolute;
+    top: 40px;
+    width: 50px;
+}
+div.red {
+    background-color: red;
+}
+</style>
+</head>
+
+<body>
+<button>Start</button>
+<div></div>
+
+<script>
+$(function(){
+    $("button").click(function () {
+        $("div").animate({left:'+=200px'}, 2000);
+        $("div").animate({top:'0px'}, 600);
+        $("div").queue(function () {
+            $(this).toggleClass("red");
+            $(this).dequeue();
+        });
+        $("div").animate({left:'10px', top:'40px'}, 700);
+    });
+});
+</script>
+</body>
+</html>
+
+<!-- lap lai hanh dong -->

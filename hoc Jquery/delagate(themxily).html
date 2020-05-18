@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiêu đề</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<style>
+p { background: pink;}
+</style>
+<script>
+	$(function(){
+		$('div').delegate('p' , 'click'  , function(){
+			$(this).after('<p>doan van duoc them vao</p>');
+		})
+	})
+</script>
+</head>
+
+<body>
+<div class="div">
+	<strong>
+		<p>thanh phan p</p>
+	</strong>
+</div>
+</body>
+</html>
+ 
+ <!-- thêm 1 sử lí tới 1 hoắc nhiều sự kiện phù hợp với bộ chọn -->
